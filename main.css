@@ -1,4 +1,4 @@
-/* Sans  */
+/* Sans Font */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 /* Global values  */
@@ -83,6 +83,7 @@ section p {
 #navbarNav {
 	justify-content: center;
 	width: 100%;
+	outline: none;
 }
 
 #navbarNav a:hover {
@@ -300,7 +301,7 @@ footer ul li a i {
 	color: var(--shaded-black);
 }
 
-/* media queries  */
+/* media queries (tablet and desktop)  */
 
 /* tablets  */
 
@@ -350,7 +351,7 @@ footer ul li a i {
 		margin-left: 310px;
 	}
 
-	/* Events section  */
+	/* tablet Events section  */
 
 	.events h2 {
 		margin-right: 380px;
@@ -380,7 +381,7 @@ footer ul li a i {
 		border-radius: 10px;
 	}
 
-	/* follow us section  */
+	/* tablet follow us section  */
 
 	.follow-us {
 		background-image: url(./imgs/follow-blob.svg);
@@ -403,7 +404,7 @@ footer ul li a i {
 		width: 65%;
 	}
 
-	/* questions or concerns sections  */
+	/* tablet questions or concerns sections  */
 
 	.quest-concern form {
 		padding: 1.8rem;
@@ -412,7 +413,7 @@ footer ul li a i {
 		width: 80%;
 	}
 
-	/* footer section  */
+	/* tablet footer section  */
 
 	footer {
 		background-position: 50% 80%;
@@ -447,12 +448,15 @@ footer ul li a i {
 	}
 }
 
-/* desktop  */
+/* Desktop  */
+
 @media screen and (min-width: 980px) {
-	/* hero element  */
+	/* desk hero element  */
 	.hero img {
 		max-width: 580px;
 	}
+
+	/* desk about us  */
 
 	.about-us {
 		flex-direction: column;
@@ -491,7 +495,7 @@ footer ul li a i {
 		width: 50%;
 	}
 
-	/* Events Section  */
+	/* desk Events Section  */
 
 	.events h2 {
 		margin-right: 0px;
@@ -509,13 +513,13 @@ footer ul li a i {
 		max-width: 370px;
 	}
 
-	/* quest and concerns section  */
+	/* desk quest and concerns section  */
 
 	.quest-concern form {
 		padding: 1.2rem;
 	}
 
-	/* footer section  */
+	/* desk footer section  */
 
 	footer {
 		height: 45vh;

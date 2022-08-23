@@ -193,6 +193,33 @@ section p {
 	width: 60%;
 }
 
+/* footer section  */
+
+footer {
+	background-color: var(--shaded-grey);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem 1rem;
+	text-align: center;
+	gap: 1.5rem;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+
+footer ul li {
+	margin: 0 0.5rem;
+}
+
+footer ul li a i {
+	color: var(--shaded-black);
+}
+
 /* media queries  */
 
 @media (max-width: 767px) {

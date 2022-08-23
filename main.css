@@ -10,6 +10,7 @@
 	/* primary colors  */
 	--purple-clr: #965fcc;
 	--blue-clr: #1db2e8;
+	--yellow-clr: #ffec8e;
 }
 
 /* reset styles  */
@@ -313,6 +314,7 @@ footer ul li a i {
 
 	.hero-sub {
 		font-size: 1.5rem;
+		margin-bottom: 100px;
 	}
 
 	.about-us {
@@ -323,17 +325,17 @@ footer ul li a i {
 
 	.about-us h2,
 	.about-us .sub-title {
-		margin-left: 420px;
+		margin-left: 450px;
 	}
 
 	.about-us p {
-		margin-left: 300px;
+		margin-left: 310px;
 	}
 
 	/* Events section  */
 
 	.events h2 {
-		margin-right: 420px;
+		margin-right: 450px;
 	}
 
 	.events-content {
@@ -356,7 +358,7 @@ footer ul li a i {
 	}
 
 	.right-half img {
-		width: 100%;
+		width: 85%;
 		border-radius: 10px;
 	}
 
@@ -380,6 +382,14 @@ footer ul li a i {
 
 	.follow-us img {
 		width: 65%;
+	}
+
+	/* questions or concerns sections  */
+
+	.quest-concern form {
+		padding: 1.8rem;
+		gap: 1.3rem;
+		width: 80%;
 	}
 
 	@keyframes grow {

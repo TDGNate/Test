@@ -1,0 +1,65 @@
+/* Sans  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+}
+
+/* Mobile First  */
+
+/* navbar section  */
+
+#navbarNav {
+	justify-content: center;
+	width: 100%;
+}
+
+#navbarNav a:hover {
+	color: purple;
+}
+
+/* hero section  */
+
+.hero {
+	background-image: url(./imgs/purple_sky.jpg);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 95vh;
+}
+
+/* media queries  */
+
+@media (max-width: 767px) {
+	.custom-navbar .navbar-right {
+		float: right;
+		padding-right: 15px;
+	}
+	.custom-navbar .nav.navbar-nav.navbar-right li {
+		float: right;
+	}
+	.custom-navbar .nav.navbar-nav.navbar-right li > a {
+		padding: 8px 5px;
+	}
+	.custom-navbar .navbar-toggle {
+		float: left;
+	}
+	.custom-navbar .navbar-header {
+		float: left;
+		width: auto !important;
+	}
+	.custom-navbar .navbar-collapse {
+		clear: both;
+		float: none;
+	}
+}
+
+

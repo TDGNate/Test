@@ -33,7 +33,16 @@ body {
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 95vh;
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero img {
+	animation: grow 1120ms;
+	width: 85%;
+	background-color: rgba(0, 0, 0, 0.468);
 }
 
 /* media queries  */
@@ -62,4 +71,14 @@ body {
 	}
 }
 
+/* animations  */
 
+@keyframes grow {
+	0% {
+		width: 0%;
+	}
+
+	100% {
+		width: 85%;
+	}
+}

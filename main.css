@@ -278,6 +278,10 @@ footer {
 	height: 50vh;
 }
 
+footer .container ul {
+	justify-content: center;
+}
+
 footer ul {
 	display: flex;
 	flex-direction: row;
@@ -505,6 +509,14 @@ footer ul li a i {
 
 	.quest-concern form {
 		padding: 1.2rem;
+	}
+
+	/* footer section  */
+
+	footer {
+		height: 45vh;
+		gap: 2rem;
+		background-position: 50% 75%;
 	}
 }
 

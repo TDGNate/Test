@@ -95,6 +95,7 @@ section p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 	position: relative;
 	z-index: -1;
 }
@@ -110,8 +111,19 @@ section p {
 }
 
 .hero img {
+	margin-top: 60px;
 	animation: grow 1550ms;
 	width: 85%;
+}
+
+.hero-sub {
+	font-size: 1rem;
+	padding: 0 2rem;
+	color: white;
+	text-align: center;
+	z-index: 2;
+	visibility: hidden;
+	animation: text-fade-in 1000ms 1800ms infinite;
 }
 
 /* about us section  */
@@ -242,13 +254,17 @@ section p {
 /* footer section  */
 
 footer {
+	background-image: url(./imgs/pink-waves.png);
+	background-position: 100%;
+	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 4rem 1rem;
+	padding: 1.3rem 1rem 2rem 1rem;
 	text-align: center;
 	gap: 1.6rem;
+	height: 50vh;
 }
 
 footer ul {
@@ -310,5 +326,15 @@ footer ul li a i {
 
 	100% {
 		background-color: var(--shaded-black);
+	}
+}
+
+@keyframes text-fade-in {
+	0% {
+		visibility: hidden;
+	}
+
+	100% {
+		visibility: visible;
 	}
 }

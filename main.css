@@ -259,6 +259,7 @@ footer {
 	background-image: url(./imgs/pink-waves.png);
 	background-position: 100%;
 	background-repeat: no-repeat;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -392,6 +393,30 @@ footer ul li a i {
 		width: 80%;
 	}
 
+	/* footer section  */
+
+	footer {
+		background-position: 50% 80%;
+		gap: 1.8rem;
+		height: 55vh;
+	}
+
+	footer p {
+		font-size: 1.3rem;
+	}
+
+	footer ul li a {
+		font-size: 1.3rem;
+	}
+
+	footer ul li a i {
+		transition: all 300ms ease;
+	}
+
+	footer ul li a i:hover {
+		color: var(--yellow-clr) !important;
+	}
+
 	@keyframes grow {
 		0% {
 			width: 0%;
@@ -402,6 +427,7 @@ footer ul li a i {
 		}
 	}
 }
+
 
 /* phone img grow  */
 

@@ -65,40 +65,51 @@
 
 			<section class="about-us">
 				<h2>About Us</h2>
-				<p class="sub-title">What is POP Umai?</p>
-				<p>
-					POP Umai is a start-up business established in late 2021. We sell
-					numerous anime-themed desserts and aim to open up a brick and mortar
-					location in the future. Our mission is to recreate the fun dining
-					experience of a Japanese anime cafe for the anime community in
-					Southern California.
-				</p>
+				<div class="container">
+					<div class="about-us-content">
+						<div class="about-right">
+							<p class="sub-title">What is POP Umai?</p>
+							<p>
+								POP Umai is a start-up business established in late 2021. We
+								sell numerous anime-themed desserts and aim to open up a brick
+								and mortar location in the future. Our mission is to recreate
+								the fun dining experience of a Japanese anime cafe for the anime
+								community in Southern California.
+							</p>
+						</div>
+						<div class="about-left">
+							<img src="./imgs/OC_eye smile.png" alt="anime girl smile" />
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<!-- Events section  -->
 
 			<section class="events">
 				<h2>Events</h2>
-				<div class="events-content">
-					<div class="left-half">
-						<p>
-							Love anime and food? Then you'll love us! Stop by one of our local
-							pop-up cafes and taste some of our anime-inspired meals and
-							desserts. Current anime theme is Demon Slayer
-						</p>
-						<!-- button  -->
-						<div class="btn-container">
-							<button class="event-btn">
-								<a href="/events">View Events</a>
-							</button>
+				<div class="container">
+					<div class="events-content">
+						<div class="left-half">
+							<p>
+								Love anime and food? Then you'll love us! Stop by one of our
+								local pop-up cafes and taste some of our anime-inspired meals
+								and desserts. Current anime theme is Demon Slayer
+							</p>
+							<!-- button  -->
+							<div class="btn-container">
+								<button class="event-btn">
+									<a href="/events">View Events</a>
+								</button>
+							</div>
 						</div>
-					</div>
-					<div class="right-half">
-						<img
-							id="mascot"
-							src="./imgs/Eastvale Lunar Festival - 1.JPG"
-							alt="popMascot"
-						/>
+						<div class="right-half">
+							<img
+								id="mascot"
+								src="./imgs/Eastvale Lunar Festival - 1.JPG"
+								alt="popMascot"
+							/>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -107,53 +118,55 @@
 
 			<section class="follow-us">
 				<h2>Follow Us</h2>
-				<div class="follow-us-content">
-					<div class="left-side">
-						<ul class="icons">
-							<li>
-								<a
-									href="https://www.facebook.com/PopUmaiCafe"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<i class="fa-brands fa-facebook fa-2x"></i>
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://www.instagram.com/pop_umai"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<i class="fa-brands fa-square-instagram fa-2x"></i>
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://www.tiktok.com/@pop_umai"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<i class="fa-brands fa-tiktok fa-2x"></i>
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://www.twitter.com/pop_umai"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<i class="fa-brands fa-square-twitter fa-2x"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="right-side">
-						<img
-							id="mascot"
-							src="./imgs/commission without bg.png"
-							alt="popMascot"
-						/>
+				<div class="container">
+					<div class="follow-us-content">
+						<div class="left-side">
+							<ul class="icons">
+								<li>
+									<a
+										href="https://www.facebook.com/PopUmaiCafe"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa-brands fa-facebook fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.instagram.com/pop_umai"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa-brands fa-square-instagram fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.tiktok.com/@pop_umai"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa-brands fa-tiktok fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.twitter.com/pop_umai"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa-brands fa-square-twitter fa-2x"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="right-side">
+							<img
+								id="mascot"
+								src="./imgs/commission without bg.png"
+								alt="popMascot"
+							/>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -161,78 +174,82 @@
 			<!-- questions or concerns section  -->
 			<section class="quest-concern">
 				<h2>Have questions or concerns?</h2>
-				<p class="sub-title">Send us a message!</p>
-				<form action="">
-					<!-- User's Name  -->
-					<input
-						class="questions-input"
-						type="text"
-						id="contactName"
-						placeholder="Name"
-					/>
-					<!-- User's Email  -->
-					<input
-						class="questions-input"
-						type="email"
-						id="contactEmail"
-						placeholder="Email"
-					/>
-					<!-- User's Message  -->
-					<textarea
-						class="questions-input"
-						id="contactMessage"
-						placeholder="Message"
-					></textarea>
-					<!-- User's Options  -->
-					<select class="questions-input">
-						<option value="business">Business Inquiries</option>
-						<option value="question">Question</option>
-					</select>
-					<!-- Send button   -->
-					<div class="btn-container">
-						<button class="event-btn" id="contactSend">
-							<a href="#">SEND</a>
-						</button>
-					</div>
-				</form>
+				<div class="container">
+					<p class="sub-title">Send us a message!</p>
+					<form action="">
+						<!-- User's Name  -->
+						<input
+							class="questions-input"
+							type="text"
+							id="contactName"
+							placeholder="Name"
+						/>
+						<!-- User's Email  -->
+						<input
+							class="questions-input"
+							type="email"
+							id="contactEmail"
+							placeholder="Email"
+						/>
+						<!-- User's Message  -->
+						<textarea
+							class="questions-input"
+							id="contactMessage"
+							placeholder="Message"
+						></textarea>
+						<!-- User's Options  -->
+						<select class="questions-input">
+							<option value="business">Business Inquiries</option>
+							<option value="question">Question</option>
+						</select>
+						<!-- Send button   -->
+						<div class="btn-container">
+							<button class="event-btn" id="contactSend">
+								<a href="#">SEND</a>
+							</button>
+						</div>
+					</form>
+				</div>
 			</section>
 
 			<!-- footer section  -->
 
 			<footer>
-				<p>Copyright &copy; 2022 Pop Umai - All Rights Reserved</p>
+				<div class="container">
+					<p>Copyright &copy; 2022 Pop Umai - All Rights Reserved</p>
 
-				<ul class="footer-icons">
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-facebook fa-2x"></i>
-						</a>
-					</li>
+					<ul class="footer-icons">
+						<li>
+							<a href="#">
+								<i class="fa-brands fa-facebook fa-2x"></i>
+							</a>
+						</li>
 
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-square-instagram fa-2x"></i>
-						</a>
-					</li>
+						<li>
+							<a href="#">
+								<i class="fa-brands fa-square-instagram fa-2x"></i>
+							</a>
+						</li>
 
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-square-twitter fa-2x"></i>
-						</a>
-					</li>
+						<li>
+							<a href="#">
+								<i class="fa-brands fa-square-twitter fa-2x"></i>
+							</a>
+						</li>
 
-					<li>
-						<a href="#">
-							<i class="fa-brands fa-tiktok fa-2x"></i>
-						</a>
-					</li>
+						<li>
+							<a href="#">
+								<i class="fa-brands fa-tiktok fa-2x"></i>
+							</a>
+						</li>
 
-					<li>
-						<a href="#">
-							<i class="fab fa-pinterest fa-2x"></i>
-						</a>
-					</li>
-				</ul>
+						<li>
+							<a href="#">
+								<i class="fab fa-pinterest fa-2x"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</footer>
 		</main>
 

@@ -6,7 +6,7 @@
 :root {
 	/* darks colors  */
 	--shaded-grey: rgba(197, 197, 197, 0.316);
-	--shaded-black: rgba(0, 0, 0, 0.412);
+	--shaded-black: rgba(0, 0, 0, 0.389);
 	/* primary colors  */
 	--purple-clr: #965fcc;
 	--blue-clr: #1db2e8;
@@ -74,6 +74,10 @@ section p {
 	color: var(--blue-clr);
 }
 
+.container {
+	max-width: 1080px;
+}
+
 /* navbar section  */
 
 #navbarNav {
@@ -136,6 +140,10 @@ section p {
 	align-items: center;
 	flex-direction: column;
 	gap: 0.5rem;
+}
+
+.about-left {
+	display: none;
 }
 
 /* events section  */
@@ -320,13 +328,14 @@ footer ul li a i {
 
 	.about-us {
 		background-image: url(./imgs/aboutMe.svg);
-		background-position: 20% 20%;
+		background-position: 60% 20%;
+		background-size: cover;
 		background-repeat: no-repeat;
 	}
 
 	.about-us h2,
 	.about-us .sub-title {
-		margin-left: 450px;
+		margin-left: 350px;
 	}
 
 	.about-us p {
@@ -336,7 +345,7 @@ footer ul li a i {
 	/* Events section  */
 
 	.events h2 {
-		margin-right: 450px;
+		margin-right: 380px;
 	}
 
 	.events-content {
@@ -371,6 +380,7 @@ footer ul li a i {
 		background-repeat: no-repeat;
 		background-size: cover;
 		flex-direction: column;
+		padding: 2rem;
 	}
 
 	.left-side {
@@ -390,6 +400,7 @@ footer ul li a i {
 	.quest-concern form {
 		padding: 1.8rem;
 		gap: 1.3rem;
+		margin: 0 auto;
 		width: 80%;
 	}
 
@@ -428,8 +439,76 @@ footer ul li a i {
 	}
 }
 
+/* desktop  */
+@media screen and (min-width: 980px) {
+	/* hero element  */
+	.hero img {
+		max-width: 580px;
+	}
 
-/* phone img grow  */
+	.about-us {
+		flex-direction: column;
+		background-image: url(./imgs/desktop-bg-aboutus.svg);
+	}
+
+	.about-us h2 {
+		margin-bottom: 2rem;
+	}
+
+	.about-us h2,
+	.about-us .sub-title,
+	.about-us p {
+		margin-left: 0px;
+	}
+
+	.about-us-content {
+		display: flex;
+		flex-direction: row-reverse;
+	}
+
+	.about-left {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		display: block;
+	}
+
+	.about-left img {
+		width: 50%;
+	}
+
+	.about-right {
+		width: 50%;
+	}
+
+	/* Events Section  */
+
+	.events h2 {
+		margin-right: 0px;
+		margin-bottom: 2rem;
+	}
+
+	.events-content {
+		display: flex;
+		flex-direction: row;
+		margin-top: 2rem;
+		gap: 2.5rem;
+	}
+
+	.events-content img {
+		max-width: 370px;
+	}
+
+	/* quest and concerns section  */
+
+	.quest-concern form {
+		padding: 1.2rem;
+	}
+}
+
+/* phone img grow */
 
 @media screen and (max-width: 730px) {
 	@keyframes grow {

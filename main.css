@@ -98,6 +98,7 @@ section p {
 	flex-direction: column;
 	position: relative;
 	z-index: -1;
+	overflow: hidden;
 }
 
 .hero:before {
@@ -112,8 +113,9 @@ section p {
 
 .hero img {
 	margin-top: 60px;
-	animation: grow 1550ms;
+	animation: grow 1650ms;
 	width: 85%;
+	z-index: 10;
 }
 
 .hero-sub {
@@ -121,9 +123,8 @@ section p {
 	padding: 0 2rem;
 	color: white;
 	text-align: center;
-	z-index: 2;
-	visibility: hidden;
-	animation: text-fade-in 1000ms 1800ms infinite;
+	z-index: 10;
+	animation: text-fade-in 200ms;
 }
 
 /* about us section  */
@@ -283,27 +284,16 @@ footer ul li a i {
 
 /* media queries  */
 
-@media (max-width: 767px) {
-	.custom-navbar .navbar-right {
-		float: right;
-		padding-right: 15px;
+/* tablets  */
+
+@media screen and (max-width: 730) {
+	/* nav and hero sections  */
+	#navbarNav a {
+		font-size: 1.2rem;
 	}
-	.custom-navbar .nav.navbar-nav.navbar-right li {
-		float: right;
-	}
-	.custom-navbar .nav.navbar-nav.navbar-right li > a {
-		padding: 8px 5px;
-	}
-	.custom-navbar .navbar-toggle {
-		float: left;
-	}
-	.custom-navbar .navbar-header {
-		float: left;
-		width: auto !important;
-	}
-	.custom-navbar .navbar-collapse {
-		clear: both;
-		float: none;
+
+	.hero img {
+		width: 50%;
 	}
 }
 
@@ -331,10 +321,12 @@ footer ul li a i {
 
 @keyframes text-fade-in {
 	0% {
+		margin-left: -500px;
 		visibility: hidden;
 	}
 
 	100% {
+		margin-left: 0;
 		visibility: visible;
 	}
 }

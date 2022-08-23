@@ -118,7 +118,7 @@ section p {
 
 .hero img {
 	margin-top: 60px;
-	animation: grow 1650ms;
+	animation: grow 2.1s;
 	width: 85%;
 	z-index: 10;
 }
@@ -166,6 +166,10 @@ section p {
 	border: none;
 	border-radius: 10px;
 	text-align: center;
+}
+
+.event-btn:hover {
+	background-color: #704898;
 }
 
 .event-btn a {
@@ -556,4 +560,22 @@ footer ul li a i {
 		margin-left: 0;
 		visibility: visible;
 	}
+}
+
+/* scroll bar design  */
+
+/* width of bar  */
+::-webkit-scrollbar {
+	width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--yellow-clr);
+	border-radius: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--purple-clr);
 }

@@ -286,28 +286,67 @@ footer ul li a i {
 
 /* tablets  */
 
-@media screen and (max-width: 730) {
-	/* nav and hero sections  */
+@media screen and (min-width: 730px) {
+	/* global, nav, hero elements  */
+	section {
+		padding: 4rem 2.8rem 2.8rem 2.8rem;
+	}
+	section h2 {
+		font-size: 2.9rem;
+	}
+
+	section p {
+		font-size: 1.2rem;
+	}
+
+	.sub-title {
+		font-size: 1.4rem;
+	}
+
 	#navbarNav a {
 		font-size: 1.2rem;
 	}
 
 	.hero img {
-		width: 50%;
+		width: 55%;
+	}
+
+	.hero-sub {
+		font-size: 1.5rem;
+	}
+
+	.about-us {
+		background-image: url(./imgs/aboutMe.svg);
+		background-position: 60% 10%;
+		background-repeat: no-repeat;
+	}
+
+	@keyframes grow {
+		0% {
+			width: 0%;
+		}
+
+		100% {
+			width: 55%;
+		}
+	}
+}
+
+/* phone img grow  */
+
+@media screen and (max-width: 730px) {
+	@keyframes grow {
+		0% {
+			width: 0%;
+		}
+
+		100% {
+			width: 85%;
+		}
 	}
 }
 
 /* animations  */
-
-@keyframes grow {
-	0% {
-		width: 0%;
-	}
-
-	100% {
-		width: 85%;
-	}
-}
 
 @keyframes fade {
 	0% {

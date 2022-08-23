@@ -1,6 +1,18 @@
 /* Sans  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
+/* Global values  */
+
+:root {
+	/* darks colors  */
+	--shaded-grey: rgba(203, 200, 200, 0.889);
+	--shaded-black: rgba(0, 0, 0, 0.468);
+	/* primary colors  */
+	--purple-clr: #965fcc;
+}
+
+/* reset styles  */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,12 +20,48 @@
 	scroll-behavior: smooth;
 }
 
+/* Mobile First  */
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	width: 100%;
 }
 
-/* Mobile First  */
+/* global sections  */
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+}
+
+section {
+	padding: 4.1rem 1.5rem 0 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+section h2 {
+	font-size: 2.2rem;
+	font-weight: bold;
+	color: var(--purple-clr);
+	border-bottom: 1px solid var(--shaded-grey);
+	padding: 0.5rem;
+}
+
+section p {
+	margin: 1rem 0;
+	text-align: center;
+}
+
+.sub-title {
+	font-size: 1.2rem;
+	margin: 0.8rem 0;
+}
 
 /* navbar section  */
 
@@ -23,7 +71,7 @@ body {
 }
 
 #navbarNav a:hover {
-	color: purple;
+	color: var(--purple-clr);
 }
 
 /* hero section  */
@@ -44,7 +92,7 @@ body {
 .hero:before {
 	content: '';
 	position: absolute;
-	background-color: rgba(0, 0, 0, 0.468);
+	background-color: var(--shaded-black);
 	width: 100%;
 	height: 100%;
 	z-index: -2;
@@ -57,6 +105,44 @@ body {
 }
 
 /* about us section  */
+
+.about-us {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+/* events section  */
+
+.btn-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+
+.event-btn {
+	padding: 1rem;
+	background-color: var(--purple-clr);
+	border: none;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.event-btn a {
+	color: white;
+}
+
+.right-half {
+	display: none;
+}
+
+/* follow us section  */
+
+
 
 /* media queries  */
 
@@ -102,6 +188,6 @@ body {
 	}
 
 	100% {
-		background-color: rgba(0, 0, 0, 0.468);
+		background-color: var(--shaded-black);
 	}
 }

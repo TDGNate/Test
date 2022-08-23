@@ -37,13 +37,26 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	z-index: -1;
+}
+
+.hero:before {
+	content: '';
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.468);
+	width: 100%;
+	height: 100%;
+	z-index: -2;
+	animation: fade 1000ms;
 }
 
 .hero img {
 	animation: grow 1120ms;
 	width: 85%;
-	background-color: rgba(0, 0, 0, 0.468);
 }
+
+/* about us section  */
 
 /* media queries  */
 
@@ -80,5 +93,15 @@ body {
 
 	100% {
 		width: 85%;
+	}
+}
+
+@keyframes fade {
+	0% {
+		background-color: transparent;
+	}
+
+	100% {
+		background-color: rgba(0, 0, 0, 0.468);
 	}
 }

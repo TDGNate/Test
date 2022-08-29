@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- bootstrap  -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+			crossorigin="anonymous"
+		/>
+		<!-- main css  -->
+		<link rel="stylesheet" href="main.css" />
+		<title>POP Umai</title>
+	</head>
+	<body>
+		<!-- nav section  -->
+
+		<nav class="navbar navbar-expand-md fixed-top bg-light">
+			<div class="container-fluid">
+				<button
+					class="navbar-toggler float-end"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">HOME</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">ABOUT</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">EVENTS</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">COOKIES</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">CONTACT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero section  -->
+
+		<div class="hero">
+			<img src="./imgs/whitelogo.png" alt="logo" />
+			<p class="hero-sub">MORE ANIME THEMED POP UPS COMING SOON</p>
+		</div>
+
+		<main>
+			<!-- about us section  -->
+
+			<section class="about-us">
+				<h2>About Us</h2>
+				<div class="container">
+					<div class="about-us-content">
+						<div class="about-right">
+							<p class="sub-title">What is POP Umai?</p>
+							<p>
+								POP Umai is a start-up business established in late 2021. We
+								sell numerous anime-themed desserts and aim to open up a brick
+								and mortar location in the future. Our mission is to recreate
+								the fun dining experience of a Japanese anime cafe for the anime
+								community in Southern California.
+							</p>
+						</div>
+						<div class="about-left">
+							<img src="./imgs/OC_eye smile.png" alt="anime girl smile" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Events section  -->
+
+			<section class="events">
+				<h2>Events</h2>
+				<div class="container">
+					<div class="events-content">
+						<div class="left-half">
+							<p>
+								Love anime and food? Then you'll love us! Stop by one of our
+								local pop-up cafes and taste some of our anime-inspired meals
+								and desserts. Current anime theme is Demon Slayer
+							</p>
+							<!-- button  -->
+							<div class="btn-container">
+								<button class="event-btn">
+									<a href="/events">View Events</a>
+								</button>
+							</div>
+						</div>
+						<div class="right-half">
+							<img
+								id="mascot"
+								src="./imgs/Eastvale Lunar Festival - 1.JPG"
+								alt="popMascot"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- follow us section  -->
+
+			<section class="follow-us">
+				<h2>Follow Us</h2>
+				<div class="container">
+					<div class="follow-us-content">
+						<div class="left-side">
+							<ul class="icons">
+								<li>
+									<a
+										href="https://www.facebook.com/PopUmaiCafe"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa-brands fa-facebook fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.instagram.com/pop_umai"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa-brands fa-square-instagram fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.tiktok.com/@pop_umai"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa-brands fa-tiktok fa-2x"></i>
+									</a>
+								</li>
+								<li>
+									<a
+										href="https://www.twitter.com/pop_umai"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<i class="fa-brands fa-square-twitter fa-2x"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="right-side">
+							<img
+								id="mascot"
+								src="./imgs/commission without bg.png"
+								alt="popMascot"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- questions or concerns section  -->
+			<section class="quest-concern">
+				<h2>Have questions or concerns?</h2>
+				<div class="container">
+					<p class="sub-title">Send us a message!</p>
+					<form action="">
+						<!-- User's Name  -->
+						<input
+							class="questions-input"
+							type="text"
+							id="contactName"
+							placeholder="Name"
+						/>
+						<!-- User's Email  -->
+						<input
+							class="questions-input"
+							type="email"
+							id="contactEmail"
+							placeholder="Email"
+						/>
+						<!-- User's Message  -->
+						<textarea
+							class="questions-input"
+							id="contactMessage"
+							placeholder="Message"
+						></textarea>
+						<!-- User's Options  -->
+						<select class="questions-input">
+							<option value="business">Business Inquiries</option>
+							<option value="question">Question</option>
+						</select>
+						<!-- Send button   -->
+						<div class="btn-container">
+							<button class="event-btn" id="contactSend">
+								<a href="#">SEND</a>
+							</button>
+						</div>
+					</form>
+				</div>
+			</section>
+
+			<!-- footer section  -->
+
+			<footer>
+				<div class="container">
+					<p>Copyright &copy; 2022 Pop Umai - All Rights Reserved</p>
+
+					<ul class="footer-icons">
+						<li>
+							<a href="#">
+								<i class="fa-brands fa-facebook fa-2x"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="fa-brands fa-square-instagram fa-2x"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="fa-brands fa-square-twitter fa-2x"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="fa-brands fa-tiktok fa-2x"></i>
+							</a>
+						</li>
+
+						<li>
+							<a href="#">
+								<i class="fab fa-pinterest fa-2x"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</main>
+
+		<!-- fontawesome scripts  -->
+		<script
+			src="https://kit.fontawesome.com/66e9768e1c.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- bootstrap scripts  -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- vanta scripts  -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+
+		<!-- My JS File  -->
+		<script src="./index.js"></script>
+	</body>
+</html>

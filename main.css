@@ -1,5 +1,8 @@
+/* Domine Font  */
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&display=swap");
+
 /* Sans Font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap");
 
 /* Global values  */
 
@@ -25,7 +28,7 @@
 /* Mobile First  */
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: "Open Sans", sans-serif;
 	width: 100%;
 }
 
@@ -52,6 +55,8 @@ section {
 }
 
 section h2 {
+	font-family: "Domine", serif;
+	font-weight: bolder;
 	font-size: 2.2rem;
 	font-weight: bold;
 	color: var(--purple-clr);
@@ -68,6 +73,10 @@ section p {
 .sub-title {
 	font-size: 1.2rem;
 	margin: 0.8rem 0;
+}
+
+#navbarNav ul li {
+	font-weight: bold;
 }
 
 #navbarNav ul li .active {
@@ -108,7 +117,7 @@ section p {
 }
 
 .hero:before {
-	content: '';
+	content: "";
 	position: absolute;
 	background-color: var(--shaded-black);
 	width: 100%;
